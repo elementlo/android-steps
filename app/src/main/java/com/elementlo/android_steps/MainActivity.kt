@@ -1,36 +1,53 @@
 package com.elementlo.android_steps
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet
-import androidx.constraintlayout.widget.Placeholder
-import androidx.transition.TransitionManager
+import androidx.fragment.app.ListFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-    }
-
-    fun onClick(view: View) {
-        findViewById<Placeholder>(R.id.placeholder).setContentId(view.id)
-    }
-
-    fun onConstraintSetClick(view: View) {
-        val constraintLayout = view as ConstraintLayout
-
-        val constraintSet = ConstraintSet().apply {
-            //hard checking the view id matching.
-            isForceId = false
-            clone(this@MainActivity,
-                R.layout.layout_set_to
-            )
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .add(R.id.fragment_container, StepListFragment())
+                .commit()
         }
-        //Add an animation to the layout.
-        TransitionManager.beginDelayedTransition(constraintLayout)
-        constraintSet.applyTo(constraintLayout)
+    }
+}
+
+class StepListFragment : ListFragment() {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val items = arrayOf("ConstraintLayout", "MotionLayout")
+
+        listAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, items)
+
+        listView.setOnItemClickListener { _, _, position, _ ->
+            when (position) {
+                0 -> {
+                    requireContext().startActivity(
+                        Intent(
+                            activity,
+                            ConstraintLayoutActivity::class.java
+                        )
+                    )
+                }
+
+                1 -> {
+                    requireContext().startActivity(
+                        Intent(
+                            activity,
+                            MotionLayoutActivity::class.java
+                        )
+                    )
+                }
+            }
+        }
     }
 }
