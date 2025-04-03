@@ -13,7 +13,7 @@
 			android:id="@+id/title1"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="Common List Item"
+			android:text="1. Common List Item"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toTopOf="parent" />
@@ -49,7 +49,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="70dp"
-			android:text="Center At Bottom"
+			android:text="2. Center At Bottom"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -77,7 +77,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="70dp"
-			android:text="Weight Layout"
+			android:text="3. Weight Layout"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -120,7 +120,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Align Baseline/Bottom"
+			android:text="4. Align Baseline/Bottom"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/view2" />
@@ -164,7 +164,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Angle Layout"
+			android:text="5. Angle Layout"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -185,7 +185,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Constraint Text Width"
+			android:text="6. Constraint Text Width"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/angle" />
@@ -219,7 +219,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Bias"
+			android:text="7. Bias"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/textview4" />
@@ -251,7 +251,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Gone Margin"
+			android:text="8. Gone Margin"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/avatar" />
@@ -282,7 +282,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Chain Style"
+			android:text="9. Chain Style"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/gone_margin" />
@@ -296,7 +296,7 @@
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@id/title9"
-			app:layout_constraintVertical_chainStyle="packed" />
+			app:layout_constraintVertical_chainStyle="spread_inside" />
 
 
 		<TextView
@@ -344,7 +344,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Dimension Ratio"
+			android:text="10. Dimension Ratio"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/chain3" />
@@ -365,7 +365,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Percentage Layout"
+			android:text="11. Percentage Layout"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -395,7 +395,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Guide Line"
+			android:text="12. Guide Line"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -432,7 +432,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="View Group"
+			android:text="13. View Group"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/tv_password" />
@@ -466,7 +466,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="View Layer"
+			android:text="14. View Layer"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/group2" />
@@ -502,7 +502,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Barrier"
+			android:text="15. Barrier"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/layer2" />
@@ -555,7 +555,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Place Holder"
+			android:text="16. Place Holder"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/imageView7" />
@@ -584,7 +584,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Flow"
+			android:text="17. Flow"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/favorite" />
@@ -628,7 +628,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:text="Constraint Set"
+			android:text="18. Constraint Set"
 			android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/flow3" />
