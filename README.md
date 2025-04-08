@@ -29,5 +29,8 @@ Sample包含以下演示:
 17. 使用 Flow 组装网格布局.
 18. 使用 ConstraintSet 将布局变换更简单的应用到原始布局.
 
+## MotionLayout
+使用 MotionLayout 较简便的实现复杂的变换或者补间动画.
+
 
 
