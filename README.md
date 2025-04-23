@@ -2,6 +2,9 @@
 
 帮助构建 Android 基础能力, 不止需要一些面试技巧, 更重要的是亲自上手体验, 才能真正掌握. 前进每一小步都是有价值的.
 
+## OAuth2 流程
+<img width="935" alt="image" src="https://github.com/user-attachments/assets/f99e00d1-3140-440a-90a1-ea3473ba6062" />
+
 ## ConstraintLayout
 
 使用 ConstraintLayout 的一些技巧, 以及少被人提及的特性.
