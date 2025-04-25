@@ -1,7 +1,13 @@
-package com.elementlo.android_steps
+package com.elementlo.android_steps.view
 
 import android.content.Context
-import android.graphics.*
+import android.graphics.Canvas
+import android.graphics.Paint
+import android.graphics.Path
+import android.graphics.PathDashPathEffect
+import android.graphics.PathEffect
+import android.graphics.PathMeasure
+import android.graphics.Rect
 import android.util.AttributeSet
 import android.view.View
 import com.elementlo.android_steps.utils.px
@@ -14,6 +20,7 @@ private val RADIUS = 150f.px
 private val LENGTH = 120f.px
 private val DASH_WIDTH = 2f.px
 private val DASH_LENGTH = 10f.px
+
 class CustomDrawingView(context: Context?, attrs: AttributeSet?) :
     View(context, attrs) {
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -31,7 +38,12 @@ class CustomDrawingView(context: Context?, attrs: AttributeSet?) :
         path.reset()
         path.addArc(width / 2f - RADIUS, height / 2f - RADIUS, width / 2f + RADIUS, height / 2f + RADIUS, 90 + OPEN_ANGLE / 2f, 360 - OPEN_ANGLE)
         val pathMeasure = PathMeasure(path, false)
-        pathEffect = PathDashPathEffect(dash, (pathMeasure.length - DASH_WIDTH) / 20f, 0f, PathDashPathEffect.Style.ROTATE)
+        pathEffect = PathDashPathEffect(
+            dash,
+            (pathMeasure.length - DASH_WIDTH) / 20f,
+            0f,
+            PathDashPathEffect.Style.ROTATE
+        )
     }
 
     override fun onDraw(canvas: Canvas) {
