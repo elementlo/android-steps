@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.ListFragment
 
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,10 +25,9 @@ class StepListFragment : ListFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val items = arrayOf("ConstraintLayout", "MotionLayout")
+        val items = arrayOf("ConstraintLayout", "MotionLayout", "CustomDrawing")
 
         listAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, items)
-
         listView.setOnItemClickListener { _, _, position, _ ->
             when (position) {
                 0 -> {
@@ -44,6 +44,15 @@ class StepListFragment : ListFragment() {
                         Intent(
                             activity,
                             MotionLayoutActivity::class.java
+                        )
+                    )
+                }
+
+                2 -> {
+                    requireContext().startActivity(
+                        Intent(
+                            activity,
+                            CustomDrawingActivity::class.java
                         )
                     )
                 }
