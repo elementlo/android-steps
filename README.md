@@ -5,6 +5,18 @@
 ## OAuth2 流程
 <img width="935" alt="image" src="https://github.com/user-attachments/assets/f99e00d1-3140-440a-90a1-ea3473ba6062" />
 
+## Retrofit 请求流程
+```kotlin
+val retrofit = Retrofit.builder()
+  .baseUrl("")
+  .build()
+val service = retrofit.create(ApiService::class.java)
+val call = service.getApi()
+call.enqueue(...);
+```
+<img width="925" alt="image" src="https://github.com/user-attachments/assets/45a5eaa5-96c7-4074-a91f-66a6108773b7" />
+
+
 ## ConstraintLayout
 
 使用 ConstraintLayout 的一些技巧, 以及少被人提及的特性.
