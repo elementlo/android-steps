@@ -17,6 +17,14 @@ call.enqueue(...);
 <img width="925" alt="image" src="https://github.com/user-attachments/assets/45a5eaa5-96c7-4074-a91f-66a6108773b7" />
 
 
+## 简单仪表盘是怎样实现的
+
+参看CustomDrawingView.
+
+## 模仿翻页效果怎么用 Camera 实现
+
+参看FlipView.
+
 ## ConstraintLayout
 
 使用 ConstraintLayout 的一些技巧, 以及少被人提及的特性.
