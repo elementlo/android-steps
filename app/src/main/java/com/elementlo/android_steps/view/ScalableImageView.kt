@@ -40,8 +40,8 @@ class ScalableImageView(context: Context, attrs: AttributeSet) : View(context, a
     private val scaleAnimator = ObjectAnimator.ofFloat(this, "currentScale", smallScale, bigScale)
     private val scroller = OverScroller(context)
     private val customFlingRunner = CustomFlingRunner()
-    private val scaleGestureDetector = ScaleGestureDetector(context, CustomScaleListener())
     private val customScaleListener = CustomScaleListener()
+    private val scaleGestureDetector = ScaleGestureDetector(context, customScaleListener)
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)

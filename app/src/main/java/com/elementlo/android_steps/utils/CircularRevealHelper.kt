@@ -1,4 +1,4 @@
-package com.elementlo.android_steps
+package com.elementlo.android_steps.utils
 
 import android.content.Context
 import android.util.AttributeSet

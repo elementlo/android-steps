@@ -29,6 +29,9 @@ call.enqueue(...);
 
 模仿 PhotoView 实现的图片放缩滑动 view.
 
+## CustomViewPager
+自己实现的 ViewPager, 只有两个页面.
+
 ## ConstraintLayout
 
 使用 ConstraintLayout 的一些技巧, 以及少被人提及的特性.

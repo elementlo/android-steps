@@ -37,7 +37,8 @@ class StepListFragment : ListFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val items = arrayOf("ConstraintLayout", "MotionLayout", "CustomDrawing", "ScalableImageView")
+        val items = arrayOf("ConstraintLayout", "MotionLayout", "CustomDrawing", "ScalableImageView",
+            "CustomViewPagerActivity")
 
         listAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, items)
         listView.setOnItemClickListener { _, _, position, _ ->
@@ -73,6 +74,14 @@ class StepListFragment : ListFragment() {
                         Intent(
                             activity,
                             ScalableImageViewActivity::class.java
+                        )
+                    )
+                }
+                4 -> {
+                    requireContext().startActivity(
+                        Intent(
+                            activity,
+                            CustomViewPagerActivity::class.java
                         )
                     )
                 }

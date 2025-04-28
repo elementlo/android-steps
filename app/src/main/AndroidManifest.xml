@@ -26,6 +26,7 @@
         </activity>
         <activity android:name="com.elementlo.android_steps.CustomDrawingActivity" />
         <activity android:name="com.elementlo.android_steps.ScalableImageViewActivity" />
+        <activity android:name="com.elementlo.android_steps.CustomViewPagerActivity" />
     </application>
 
 </manifest>

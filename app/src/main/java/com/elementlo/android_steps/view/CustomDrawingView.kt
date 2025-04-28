@@ -7,7 +7,6 @@ import android.graphics.Path
 import android.graphics.PathDashPathEffect
 import android.graphics.PathEffect
 import android.graphics.PathMeasure
-import android.graphics.Rect
 import android.util.AttributeSet
 import android.view.View
 import com.elementlo.android_steps.utils.px
