@@ -61,6 +61,11 @@ class CustomDrawingView(context: Context?, attrs: AttributeSet?) :
             height / 2f + LENGTH * sin(markToRadians(MARK)).toFloat(), paint)
     }
 
+    override fun onLayout(changed: Boolean, left: Int, top: Int, right: Int, bottom: Int) {
+        super.onLayout(changed, left, top, right, bottom)
+    }
+
     private fun markToRadians(mark: Int) =
         Math.toRadians((90 + OPEN_ANGLE / 2f + (360 - OPEN_ANGLE) / 20f * mark).toDouble())
+
 }

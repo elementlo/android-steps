@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.elementlo.android_steps.CustomDrawingActivity" />
+        <activity android:name="com.elementlo.android_steps.ScalableImageViewActivity" />
     </application>
 
 </manifest>
